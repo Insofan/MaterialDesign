@@ -26,4 +26,12 @@
         <!--<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
     </style>
 
+    <!--Tab bar theme-->
+    <style name="TabBarTheme" parent = "Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="android:textColorSecondary">#A4EEF4</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <!--<item name="actionOverflowButtonStyle">@style/ActionButtonOverflowStyle</item>-->
+        <!--<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
+    </style>
 </resources>

@@ -3,6 +3,8 @@ package com.example.mymaterialdesign;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     //init ToolBar
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+    private ViewPagerAdapter viewPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +30,18 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.app_bar_main);
         setSupportActionBar(toolbar);
-        //Set display show home toolbar
-        //getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        //Set tab and viewPager
+        tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        viewPager = (ViewPager) findViewById(R.id.view_pager);
+        //Set view adapter
+        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+        viewPagerAdapter.addFragment(new HomeFragment(), "Home");
+        viewPagerAdapter.addFragment(new SecondFragment(), "Second");
+        viewPagerAdapter.addFragment(new ThirdFragment(), "Third");
+
+        viewPager.setAdapter(viewPagerAdapter);
+        tabLayout.setupWithViewPager(viewPager);
 
         //Add drawerLayout
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
