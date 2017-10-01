@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Material Design</string>
+    <string name="menu_item_setting">About me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank nav view</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Material Design</string>
+    <string name="menu_item_setting">关于我</string>
+</resources>
