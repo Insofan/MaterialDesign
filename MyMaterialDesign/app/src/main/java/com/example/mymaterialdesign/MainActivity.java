@@ -1,6 +1,5 @@
 package com.example.mymaterialdesign;
 
-import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -13,7 +12,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     //init ToolBar
@@ -36,8 +34,9 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         //Set view adapter
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        viewPagerAdapter.addFragment(new HomeFragment(), "Home");
-        viewPagerAdapter.addFragment(new SecondFragment(), "Second");
+
+        viewPagerAdapter.addFragment(new CardFragment(), "Card");
+        viewPagerAdapter.addFragment(new WidgetFragment(), "Widget");
         viewPagerAdapter.addFragment(new ThirdFragment(), "Third");
 
         viewPager.setAdapter(viewPagerAdapter);

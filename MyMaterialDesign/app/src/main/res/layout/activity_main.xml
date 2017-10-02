@@ -27,6 +27,8 @@
                 android:id="@+id/tab_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:tabIndicatorHeight="2dp"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
                 app:tabMode="fixed"
                 app:tabGravity="fill"
                 app:theme="@style/TabBarTheme"
