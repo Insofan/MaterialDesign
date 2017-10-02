@@ -1,0 +1,22 @@
+<resources>
+	<dimen name="dimen_card_1_button_margin_bottom">2dp</dimen>
+	<dimen name="dimen_card_1_button_height">9dp</dimen>
+	<dimen name="dimen_card_1_button_width">19.5dp</dimen>
+	<dimen name="dimen_card_1_button_margin_left">2dp</dimen>
+	<dimen name="dimen_card_1_button_margin_top">46dp</dimen>
+	<dimen name="dimen_card_1_width">86dp</dimen>
+	<dimen name="dimen_card_1_height">57dp</dimen>
+	<dimen name="dimen_card_1_button_1_margin_left">2dp</dimen>
+	<dimen name="dimen_card_1_button_2_margin_left">23.2dp</dimen>
+	<dimen name="dimen_card_1_margin_left">2dp</dimen>
+	<dimen name="dimen_card_1_margin_top">2dp</dimen>
+	<dimen name="dimen_card_1_imageView_margin_top">4dp</dimen>
+	<dimen name="dimen_card_1_imageView_width">40dp</dimen>
+	<dimen name="dimen_card_1_imageView_height">40dp</dimen>
+	<dimen name="dimen_card_1_imageView_margin_left">42dp</dimen>
+	<dimen name="dimen_card_1_title_margin_left">4dp</dimen>
+	<dimen name="dimen_card_1_title_margin_top">5.5dp</dimen>
+	<dimen name="dimen_card_1_title_width">25dp</dimen>
+	<dimen name="dimen_card_1_title_height">8dp</dimen>
+	<dimen name="dimen_card_1_sub_title_margin_top">13.8dp</dimen>
+</resources>

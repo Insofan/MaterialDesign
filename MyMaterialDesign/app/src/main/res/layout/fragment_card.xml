@@ -8,92 +8,72 @@
     tools:context="com.example.mymaterialdesign.CardFragment">
 
     <android.support.v7.widget.CardView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="45.6%"
-        app:layout_widthPercent="95.6%"
-        app:layout_marginTopPercent = "2%"
-        app:layout_marginLeftPercent = "2.2%"
-        android:background="@color/colorPrimary"
-        >
+        android:layout_width="@dimen/dimen_card_1_width"
+        android:layout_height="@dimen/dimen_card_1_height"
+        android:layout_marginLeft="@dimen/dimen_card_1_margin_left"
+        android:layout_marginTop="@dimen/dimen_card_1_margin_top"
+        android:background="@color/colorPrimary">
 
-        <android.support.percent.PercentFrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/dimen_card_1_title_width"
+            android:layout_height="@dimen/dimen_card_1_title_height"
+            android:layout_marginTop="@dimen/dimen_card_1_title_margin_top"
+            android:layout_marginLeft="@dimen/dimen_card_1_title_margin_left"
             android:gravity="center"
-            android:textColor="@color/colorPrimaryText"
             android:text="Title here"
             android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="20sp"
-            app:layout_widthPercent="29.08%"
-            app:layout_heightPercent="14.04%"
-            app:layout_marginTopPercent = "9.55%"
-            app:layout_marginLeftPercent = "4.6%"
             />
 
-            <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
-            android:textColor="@color/colorSecondText"
+        <TextView
+            android:layout_width="@dimen/dimen_card_1_title_width"
+            android:layout_height="@dimen/dimen_card_1_title_height"
+            android:layout_marginTop="@dimen/dimen_card_1_sub_title_margin_top"
+            android:layout_marginLeft="@dimen/dimen_card_1_title_margin_left"
             android:text="11-02-2017"
             android:textAlignment="textStart"
+            android:textColor="@color/colorSecondText"
             android:textSize="12sp"
-            app:layout_widthPercent="29.08%"
-            app:layout_heightPercent="14.04%"
-            app:layout_marginTopPercent = "24.16%"
-            app:layout_marginLeftPercent = "4.6%"
             />
 
-            <Button
-                android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-                android:text="Button 1"
-                app:theme="@style/CardButtonTheme"
-                app:layout_widthPercent="21.4%"
-            app:layout_heightPercent="24.6%"
-            app:layout_marginTopPercent = "74.9%"
-            app:layout_marginLeftPercent = "4.6%"
-                />
+        <Button
+            android:layout_width="@dimen/dimen_card_1_button_width"
+            android:layout_height="@dimen/dimen_card_1_button_height"
+            android:layout_marginLeft="@dimen/dimen_card_1_button_1_margin_left"
+            android:layout_marginTop="@dimen/dimen_card_1_button_margin_top"
+            android:text="Button 1"
+            app:theme="@style/CardButtonTheme" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button 2"
-                app:theme="@style/CardButtonTheme"
-                app:layout_widthPercent="21.4%"
-                app:layout_heightPercent="24.6%"
-                app:layout_marginTopPercent = "74.9%"
-                app:layout_marginLeftPercent = "27%"
-                />
+        <Button
+            android:layout_width="@dimen/dimen_card_1_button_width"
+            android:layout_height="@dimen/dimen_card_1_button_height"
+            android:layout_marginLeft="@dimen/dimen_card_1_button_2_margin_left"
+            android:layout_marginTop="@dimen/dimen_card_1_button_margin_top"
+            android:text="Button 2"
+            app:theme="@style/CardButtonTheme" />
 
-            <ImageView
-                android:layout_width="0dp"
-            android:layout_height="0dp"
-                android:src="@drawable/img_flower"
-                android:scaleType="fitXY"
-                app:layout_widthPercent="46.44%"
-                app:layout_heightPercent="70.22%"
-                app:layout_marginTopPercent = "7.02%"
-                app:layout_marginLeftPercent = "48.85%"
-                android:background="@color/colorWhite"
-                />
-        </android.support.percent.PercentFrameLayout>
+        <ImageView
+            android:layout_width="@dimen/dimen_card_1_imageView_width"
+            android:layout_height="@dimen/dimen_card_1_imageView_height"
+            android:layout_marginTop="@dimen/dimen_card_1_imageView_margin_top"
+            android:layout_marginLeft="@dimen/dimen_card_1_imageView_margin_left"
+            android:background="@color/colorWhite"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_flower" />
 
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_heightPercent="41.7%"
-        app:layout_widthPercent="41.7%"
-        app:layout_marginTopPercent = "51.2%"
-        app:layout_marginLeftPercent = "4.4%"
         android:background="@color/colorPrimary"
-        >
+        app:layout_heightPercent="41.7%"
+        app:layout_marginLeftPercent="4.4%"
+        app:layout_marginTopPercent="51.2%"
+        app:layout_widthPercent="41.7%">
+
         <android.support.percent.PercentFrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -111,15 +91,23 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:orientation="horizontal"
                 android:layout_gravity="bottom"
                 android:background="@color/colorWhite"
+                android:orientation="horizontal"
                 app:layout_heightPercent="15%"
                 app:layout_widthPercent="100%">
 
                 <Button
-                    android:layout_height="wrap_content"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:gravity="bottom"
+                    android:theme="@style/CardButtonTheme" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:backgroundTint="@color/colorPrimary"
                     android:gravity="bottom"
@@ -132,15 +120,6 @@
                     android:backgroundTint="@color/colorPrimary"
                     android:gravity="bottom"
                     android:theme="@style/CardButtonTheme" />
-
-                <Button
-                    android:layout_height="wrap_content"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:gravity="bottom"
-                    android:theme="@style/CardButtonTheme"
-                 />
 
             </LinearLayout>
 
@@ -172,10 +151,10 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_gravity="bottom"
-                android:paddingRight="15dp"
-                android:paddingLeft="15dp"
                 android:background="@color/colorWhite"
                 android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
                 app:layout_heightPercent="15%"
                 app:layout_widthPercent="100%">
 
