@@ -12,6 +12,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.RequestManager;
 
 public class MainActivity extends AppCompatActivity {
     //init ToolBar
@@ -64,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Set navigationView
         NavigationView view = (NavigationView) findViewById(R.id.navigation_view);
+        ImageView avatarImageView = (ImageView) findViewById(R.id.avatar);
+
         view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener(){
 
             @Override

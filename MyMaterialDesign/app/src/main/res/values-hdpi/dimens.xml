@@ -19,4 +19,12 @@
 	<dimen name="dimen_card_1_title_width">50dp</dimen>
 	<dimen name="dimen_card_1_title_height">16dp</dimen>
 	<dimen name="dimen_card_1_sub_title_margin_top">27.5dp</dimen>
+	<dimen name="dimen_nav_view_header_height">86dp</dimen>
+	<dimen name="dimen_nav_view_width">152dp</dimen>
+	<dimen name="dimen_nav_view_header_margin_left">8dp</dimen>
+	<dimen name="dimen_nav_view_avatar_width">32dp</dimen>
+	<dimen name="dimen_nav_view_header_gay_hub_username_margin_top">9dp</dimen>
+	<dimen name="dimen_nav_view_header_gay_hub_site_margin_top">0dp</dimen>
+	<dimen name="dimen_nav_view_avatar_margin_top">20dp</dimen>
+	<dimen name="dimen_nav_view_avatar_radius">16dp</dimen>
 </resources>

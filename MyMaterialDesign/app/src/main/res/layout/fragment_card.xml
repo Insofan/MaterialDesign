@@ -84,40 +84,47 @@
                 android:background="@color/colorSecondText"
                 android:contentDescription=""
                 android:scaleType="fitXY"
-                android:src="@drawable/img_bear"
+                android:src="@drawable/img_tree"
                 app:layout_heightPercent="85%"
                 app:layout_widthPercent="100%" />
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
+                android:layout_marginBottom="2dp"
                 android:background="@color/colorWhite"
                 android:orientation="horizontal"
-                app:layout_heightPercent="15%"
-                app:layout_widthPercent="100%">
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="27dp"
+                    android:layout_height="24dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/colorPrimary"
+                    android:background="@drawable/ic_favorite_border"
+                    android:backgroundTint="@color/colorSecondText"
                     android:gravity="bottom"
                     android:theme="@style/CardButtonTheme" />
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="21dp"
+                    android:layout_height="27dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_bookmark_border"
+                    android:backgroundTint="@color/colorSecondText"
                     android:gravity="bottom"
                     android:theme="@style/CardButtonTheme" />
 
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="27dp"
+                    android:layout_height="30dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_share"
+                    android:backgroundTint="@color/colorSecondText"
                     android:gravity="bottom"
                     android:theme="@style/CardButtonTheme" />
 
@@ -143,25 +150,26 @@
                 android:layout_height="0dp"
                 android:background="@color/colorSecondText"
                 android:scaleType="fitXY"
-                android:src="@drawable/img_tree"
+                android:src="@drawable/img_bear"
                 app:layout_heightPercent="85%"
                 app:layout_widthPercent="100%" />
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
+                android:layout_marginBottom="2dp"
                 android:background="@color/colorWhite"
                 android:orientation="horizontal"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                app:layout_heightPercent="15%"
-                app:layout_widthPercent="100%">
+                >
 
                 <Button
                     android:layout_width="27dp"
                     android:layout_height="24dp"
-                    android:background="@drawable/img_heart"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_favorite"
                     android:backgroundTint="@color/colorSecondText"
                     android:gravity="bottom"
                     android:theme="@style/CardButtonTheme" />
@@ -169,8 +177,9 @@
                 <Button
                     android:layout_width="21dp"
                     android:layout_height="27dp"
+                    android:layout_weight="1"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/img_bookmark"
+                    android:background="@drawable/ic_bookmark"
                     android:backgroundTint="@color/colorSecondText"
                     android:gravity="bottom"
                     android:theme="@style/CardButtonTheme" />
@@ -178,8 +187,9 @@
                 <Button
                     android:layout_width="27dp"
                     android:layout_height="30dp"
+                    android:layout_weight="1"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/img_share"
+                    android:background="@drawable/ic_share"
                     android:backgroundTint="@color/colorSecondText"
                     android:gravity="bottom"
                     android:theme="@style/CardButtonTheme" />
