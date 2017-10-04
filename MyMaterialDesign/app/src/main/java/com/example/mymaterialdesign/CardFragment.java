@@ -19,7 +19,8 @@ import android.widget.Toast;
 public class CardFragment extends Fragment implements View.OnClickListener {
     private boolean isCard2FavoriteClicked, isCard2BookmarkClicked,isCard3FavoriteClicked, isCard3BookmarkClicked;
     private Button card_1_button_1,card_1_button_2, card_2_favorite_button,card_2_bookmark_button, card_3_favorite_button,card_3_bookmark_button;
-    private AlphaAnimation alphaAnimation, alphaAnimationShowIcon;
+    private CardView card_1;
+    private AlphaAnimation alphaAnimationButton, alphaAnimationShowIcon;
 
 
     @Override
@@ -29,7 +30,8 @@ public class CardFragment extends Fragment implements View.OnClickListener {
         super.onCreateView(inflater, container, savedInstanceState);
 
         View  cardView = inflater.inflate(R.layout.fragment_card, container, false);
-
+        //Card
+        card_1 = (CardView) cardView.findViewById(R.id.card_1);
         //Button
         card_1_button_1 = (Button) cardView.findViewById(R.id.card_button_1);
         card_1_button_2 = (Button) cardView.findViewById(R.id.card_button_2);
@@ -56,6 +58,8 @@ public class CardFragment extends Fragment implements View.OnClickListener {
         card_3_favorite_button.setOnClickListener(this);
         card_3_bookmark_button.setOnClickListener(this);
         //Set alpha animation
+        alphaAnimationButton = new AlphaAnimation(1.0f, 0.6f);
+        alphaAnimationButton.setDuration(200);
 
         alphaAnimationShowIcon = new AlphaAnimation(0.2f, 1.0f);
         alphaAnimationShowIcon.setDuration(500);
@@ -66,10 +70,12 @@ public class CardFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.card_button_1:
-                Toast.makeText(getActivity(), "You click button 1", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Button alpha animation", Toast.LENGTH_SHORT).show();
+                card_1_button_1.startAnimation(alphaAnimationButton);
                 break;
              case R.id.card_button_2:
-                Toast.makeText(getActivity(), "You click button 2", Toast.LENGTH_SHORT).show();
+                 //Ripple effects
+                Toast.makeText(getActivity(), "Button ripple effect", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.card_2_favorite_button:
                 if (!isCard2FavoriteClicked){

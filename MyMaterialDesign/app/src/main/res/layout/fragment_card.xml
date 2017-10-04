@@ -8,7 +8,7 @@
     tools:context="com.example.mymaterialdesign.CardFragment">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/card_view_1"
+        android:id="@+id/card_1"
         android:layout_width="@dimen/dimen_card_1_width"
         android:layout_height="@dimen/dimen_card_1_height"
         android:layout_marginLeft="@dimen/dimen_card_1_margin_left"
@@ -45,7 +45,8 @@
             android:layout_height="@dimen/dimen_card_1_button_height"
             android:layout_marginLeft="@dimen/dimen_card_1_button_1_margin_left"
             android:layout_marginTop="@dimen/dimen_card_1_button_margin_top"
-            android:text="Button 1"
+            android:background="@color/colorAccent"
+            android:text="Alpha"
             app:theme="@style/CardButtonTheme" />
 
         <Button
@@ -55,7 +56,9 @@
             android:layout_height="@dimen/dimen_card_1_button_height"
             android:layout_marginLeft="@dimen/dimen_card_1_button_2_margin_left"
             android:layout_marginTop="@dimen/dimen_card_1_button_margin_top"
-            android:text="Button 2"
+            android:gravity="center"
+            android:background="@drawable/button_ripple_effect"
+            android:text="Ripple"
             app:theme="@style/CardButtonTheme" />
 
         <ImageView
@@ -80,7 +83,8 @@
 
         <android.support.percent.PercentFrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/button_ripple_effect">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -140,8 +144,10 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
+
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@drawable/button_ripple_effect"
         app:layout_heightPercent="41.7%"
         app:layout_marginLeftPercent="54.0%"
         app:layout_marginTopPercent="51.2%"
