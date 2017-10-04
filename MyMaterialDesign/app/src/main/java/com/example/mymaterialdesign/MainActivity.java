@@ -68,8 +68,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Set navigationView
         NavigationView view = (NavigationView) findViewById(R.id.navigation_view);
-        ImageView avatarImageView = (ImageView) findViewById(R.id.avatar);
-
         view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener(){
 
             @Override
