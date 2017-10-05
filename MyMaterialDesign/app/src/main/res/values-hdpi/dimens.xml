@@ -27,4 +27,6 @@
 	<dimen name="dimen_nav_view_header_gay_hub_site_margin_top">0dp</dimen>
 	<dimen name="dimen_nav_view_avatar_margin_top">20dp</dimen>
 	<dimen name="dimen_nav_view_avatar_radius">16dp</dimen>
+	<dimen name="dimen_widget_view_margin_top">4dp</dimen>
+	<dimen name="dimen_widget_text_view_margin_top">8dp</dimen>
 </resources>

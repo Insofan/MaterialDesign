@@ -3,7 +3,7 @@
     <string name="menu_item_setting">About me</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    //Nav view
+    <!--Nav view-->
     <string name="hello_blank_fragment">Hello blank nav view</string>
     <string name="drawer_open">Drawer Open</string>
     <string name="drawer_close">Drawer Close</string>

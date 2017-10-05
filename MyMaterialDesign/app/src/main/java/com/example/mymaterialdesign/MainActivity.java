@@ -12,10 +12,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.RequestManager;
 
 public class MainActivity extends AppCompatActivity {
     //init ToolBar
@@ -40,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         viewPagerAdapter.addFragment(new CardFragment(), "Card");
-        viewPagerAdapter.addFragment(new WidgetFragment(), "Widget");
+        viewPagerAdapter.addFragment(new WidgetSrollView(), "Widget");
         viewPagerAdapter.addFragment(new ThirdFragment(), "Third");
 
         viewPager.setAdapter(viewPagerAdapter);

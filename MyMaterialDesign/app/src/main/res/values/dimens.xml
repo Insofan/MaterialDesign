@@ -28,4 +28,6 @@
 	<dimen name="dimen_nav_view_header_gay_hub_site_margin_top">0dp</dimen>
 	<dimen name="dimen_nav_view_avatar_margin_top">15dp</dimen>
 	<dimen name="dimen_nav_view_avatar_radius">12dp</dimen>
+	<dimen name="dimen_widget_view_margin_top">3dp</dimen>
+	<dimen name="dimen_widget_text_view_margin_top">6dp</dimen>
 </resources>

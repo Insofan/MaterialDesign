@@ -50,7 +50,7 @@ public class CardFragment extends Fragment implements View.OnClickListener {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        //Set button listener
+        //Set login_button listener
         card_1_button_1.setOnClickListener(this);
         card_1_button_2.setOnClickListener(this);
         card_2_favorite_button.setOnClickListener(this);
