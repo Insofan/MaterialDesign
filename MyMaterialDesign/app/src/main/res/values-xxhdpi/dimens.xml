@@ -17,7 +17,7 @@
 	<dimen name="dimen_card_1_title_margin_left">16dp</dimen>
 	<dimen name="dimen_card_1_title_margin_top">22dp</dimen>
 	<dimen name="dimen_card_1_sub_title_margin_top">55dp</dimen>
-	//Nav view dimens
+	<!--Nav view dimens-->
 	<dimen name="dimen_nav_view_width">304dp</dimen>
 	<dimen name="dimen_nav_view_avatar_width">64dp</dimen>
 	<dimen name="dimen_nav_view_avatar_margin_top">40dp</dimen>
@@ -29,4 +29,9 @@
 	<!--Widget view dimens-->
 	<dimen name="dimen_widget_text_view_margin_top">16dp</dimen>
 	<dimen name="dimen_widget_view_margin_top">8dp</dimen>
+	<dimen name="dimen_widget_text_view_margin_left">16dp</dimen>
+	<dimen name="dimen_widget_floating_action_button_margin_right">16dp</dimen>
+	<dimen name="dimen_widget_floating_plus_action_button_margin_bottom">16dp</dimen>
+	<dimen name="dimen_widget_floating_email_action_button_margin_bottom">96dp</dimen>
+	<dimen name="dimen_widget_floating_phone_action_button_margin_bottom">176dp</dimen>
 </resources>

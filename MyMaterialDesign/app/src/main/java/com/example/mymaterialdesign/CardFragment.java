@@ -70,12 +70,12 @@ public class CardFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.card_button_1:
-                Toast.makeText(getActivity(), "Button alpha animation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Alpha animation", Toast.LENGTH_SHORT).show();
                 card_1_button_1.startAnimation(alphaAnimationButton);
                 break;
              case R.id.card_button_2:
                  //Ripple effects
-                Toast.makeText(getActivity(), "Button ripple effect", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Ripple effect", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.card_2_favorite_button:
                 if (!isCard2FavoriteClicked){

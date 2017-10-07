@@ -29,4 +29,9 @@
 	<dimen name="dimen_nav_view_avatar_radius">24dp</dimen>
 	<dimen name="dimen_widget_view_margin_top">6dp</dimen>
 	<dimen name="dimen_widget_text_view_margin_top">12dp</dimen>
+	<dimen name="dimen_widget_text_view_margin_left">12dp</dimen>
+	<dimen name="dimen_widget_floating_action_button_margin_right">12dp</dimen>
+	<dimen name="dimen_widget_floating_plus_action_button_margin_bottom">12dp</dimen>
+	<dimen name="dimen_widget_floating_email_action_button_margin_bottom">72dp</dimen>
+	<dimen name="dimen_widget_floating_phone_action_button_margin_bottom">132dp</dimen>
 </resources>

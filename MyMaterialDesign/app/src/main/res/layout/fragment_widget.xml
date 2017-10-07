@@ -1,13 +1,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:layout_marginTop="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.mymaterialdesign.WidgetSrollView">
+    tools:context="com.example.mymaterialdesign.WidgetSrollView"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,7 +18,7 @@
         android:layout_marginTop="@dimen/dimen_widget_text_view_margin_top"
         app:theme="@style/WidegetTextViewTheme"
         android:layout_gravity="left"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginLeft="@dimen/dimen_widget_text_view_margin_left"/>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="200dp"
@@ -63,11 +65,25 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Switch"
+        android:layout_marginTop="@dimen/dimen_widget_text_view_margin_top"
+        app:theme="@style/WidegetTextViewTheme"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/dimen_widget_text_view_margin_left"/>
+    <Switch
+        android:id="@+id/switch_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Check Box Group"
         android:layout_marginTop="@dimen/dimen_widget_text_view_margin_top"
         app:theme="@style/WidegetTextViewTheme"
         android:layout_gravity="left"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginLeft="@dimen/dimen_widget_text_view_margin_left"/>
 
     <CheckBox
         android:id="@+id/check_box_1"
@@ -96,38 +112,54 @@
         android:layout_marginTop="@dimen/dimen_widget_text_view_margin_top"
         app:theme="@style/WidegetTextViewTheme"
         android:layout_gravity="left"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginLeft="@dimen/dimen_widget_text_view_margin_left"/>
+
+
 
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <RadioButton
-        android:id="@+id/radio_button_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RadioButton 1" />
+            android:id="@+id/radio_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton 1" />
 
-         <RadioButton
-        android:id="@+id/radio_button_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RadioButton 2" />
+        <RadioButton
+            android:id="@+id/radio_button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton 2" />
 
-         <RadioButton
-        android:id="@+id/radio_button_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RadioButton 3" />
+        <RadioButton
+            android:id="@+id/radio_button_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton 3" />
     </RadioGroup>
-     <TextView
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Spinner"-->
+        <!--android:layout_marginTop="@dimen/dimen_widget_text_view_margin_top"-->
+        <!--app:theme="@style/WidegetTextViewTheme"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:layout_marginLeft="16dp"/>-->
+
+    <!--<Spinner-->
+        <!--android:id="@+id/spinner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rating Bar"
         android:layout_marginTop="@dimen/dimen_widget_text_view_margin_top"
         app:theme="@style/WidegetTextViewTheme"
         android:layout_gravity="left"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginLeft="@dimen/dimen_widget_text_view_margin_left"/>
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
