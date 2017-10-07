@@ -55,4 +55,23 @@
 
         <item name="android:textSize">15sp</item>
     </style>
+    <!--picker theme-->
+
+    <style name="PickerTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#e81e63</item>
+        <item name="colorPrimaryDark">#c1185b</item>
+        <item name="colorAccent">#ccdb39</item>
+
+        <item name="colorControlHighlight">#ccdb39</item>
+        <item name="colorButtonNormal">#e81e63</item>
+        <item name="colorControlActivated">#ccdb39</item>
+
+        //Color of the menu item text
+        <item name="android:textColor">@android:color/black</item>
+        //Menu item background color
+        <item name="android:itemBackground">@color/colorSecondText</item>
+
+    </style>
+
 </resources>

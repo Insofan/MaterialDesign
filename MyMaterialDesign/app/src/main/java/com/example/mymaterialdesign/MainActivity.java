@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         viewPagerAdapter.addFragment(new CardFragment(), "Card");
-        viewPagerAdapter.addFragment(new WidgetSrollView(), "Widget");
-        viewPagerAdapter.addFragment(new ThirdFragment(), "Third");
+        viewPagerAdapter.addFragment(new WidgetFragment(), "Widget");
+        viewPagerAdapter.addFragment(new PickerFragment(), "Picker");
 
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     @Override
@@ -80,4 +79,6 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+
 }

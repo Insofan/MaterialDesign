@@ -34,4 +34,5 @@
 	<dimen name="dimen_widget_floating_plus_action_button_margin_bottom">16dp</dimen>
 	<dimen name="dimen_widget_floating_email_action_button_margin_bottom">96dp</dimen>
 	<dimen name="dimen_widget_floating_phone_action_button_margin_bottom">176dp</dimen>
+	<!--Picker view dimens-->
 </resources>
