@@ -19,6 +19,11 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".CollpaseActivity"
+            android:label="Collpase Activity">
+
+        </activity>
+
 
     </application>
 

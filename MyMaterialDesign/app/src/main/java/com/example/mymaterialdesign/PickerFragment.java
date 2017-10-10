@@ -2,16 +2,13 @@ package com.example.mymaterialdesign;
 
 import android.animation.AnimatorListenerAdapter;
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.constraint.solver.widgets.Animator;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
-import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 
@@ -22,9 +19,8 @@ import android.widget.TimePicker;
 public class PickerFragment extends Fragment implements View.OnClickListener {
     FloatingActionButton fab;
     DatePicker datePicker;
-    TimePicker timePicker;
 
-    boolean isFabClicked = false;
+    boolean isFabClicked = true;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

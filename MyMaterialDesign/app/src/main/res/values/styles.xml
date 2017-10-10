@@ -13,7 +13,7 @@
 
         //Color of the menu item text
         <item name="android:textColor">@android:color/black</item>
-        //Menu item background color
+        //Menu item color
         <item name="android:itemBackground">@color/colorWhite</item>
 
     </style>
@@ -71,7 +71,10 @@
         <item name="android:textColor">@android:color/black</item>
         //Menu item background color
         <item name="android:itemBackground">@color/colorSecondText</item>
+    </style>
 
+    <style name="MenuItemTheme" parent="Theme.AppCompat">
+           //Drawer item color
     </style>
 
 </resources>

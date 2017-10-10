@@ -1,13 +1,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/navigation_item_1"
-            android:title="Chelsea"/>
+            android:id="@+id/navigation_item_bottom_tab"
+            android:icon="@drawable/ic_bottom_tab"
+            android:title="Bottom tab"/>
+
         <item
-            android:id="@+id/navigation_item_2"
-            android:title="Manchester United"/>
+            android:id="@+id/navigation_item_collapse_view"
+            android:icon="@drawable/ic_collapse_view"
+            android:title="Collapse view"/>
+
         <item
-            android:id="@+id/navigation_item_3"
-            android:title="Arsenal"/>
+            android:id="@+id/navigation_item_about_me"
+            android:icon="@drawable/ic_about_me"
+            android:title="About me"/>
     </group>
 </menu>

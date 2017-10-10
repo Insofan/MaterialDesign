@@ -1,5 +1,6 @@
 package com.example.mymaterialdesign;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -11,9 +12,11 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+import android.view.View;
+import android.support.design.widget.Snackbar;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     //init ToolBar
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
@@ -64,13 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Set navigationView
         NavigationView view = (NavigationView) findViewById(R.id.navigation_view);
-        view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener(){
-
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                return false;
-            }
-        });
+        view.setNavigationItemSelectedListener(this);
 
     }
 
@@ -80,5 +77,35 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            default:
+                Intent intent = new Intent(this, CollpaseActivity.class);
+                startActivity(intent);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Intent intent = new Intent();
+        switch (item.getItemId()){
+            case R.id.navigation_item_bottom_tab:
+                Snackbar.make(drawerLayout,"bottom tab", Snackbar.LENGTH_SHORT).show();
+                break;
+            case R.id.navigation_item_collapse_view:
+                intent.setClass(MainActivity.this, CollpaseActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.navigation_item_about_me:
+
+                break;
+            default:
+                break;
+        }
+        return true;
+    }
 
 }
