@@ -81,8 +81,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             default:
-                Intent intent = new Intent(this, CollpaseActivity.class);
-                startActivity(intent);
+
                 break;
         }
         return super.onOptionsItemSelected(item);
