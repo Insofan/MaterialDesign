@@ -1,32 +1,28 @@
 package com.example.mymaterialdesign;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 /**
- * Created by Haixiao on 2017/10/10.
+ * Created by Haixiao on 2017/10/12.
  * Email:insofan3156@gmail.com
  * https://github.com/Insofan
  */
 
-public class CollpaseActivity extends MainActivity{
+public class AboutMeActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.collapse_activity);
+        setContentView(R.layout.about_me_activity);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.collapse_tool_bar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.about_me_toolbar);
         setSupportActionBar(toolbar);
-
-
-
-
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -40,10 +36,5 @@ public class CollpaseActivity extends MainActivity{
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
     }
 }

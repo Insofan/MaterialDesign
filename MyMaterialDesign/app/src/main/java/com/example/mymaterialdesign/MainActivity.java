@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main_activity);
 
         toolbar = (Toolbar) findViewById(R.id.app_bar_main);
         setSupportActionBar(toolbar);
@@ -79,9 +79,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+        Intent intent = new Intent();
         switch (item.getItemId()) {
             default:
-
+                intent.setClass(MainActivity.this, AboutMeActivity.class);
+                startActivity(intent);
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -93,13 +96,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (item.getItemId()){
             case R.id.navigation_item_bottom_tab:
                 Snackbar.make(drawerLayout,"bottom tab", Snackbar.LENGTH_SHORT).show();
+                drawerLayout.closeDrawers();
                 break;
             case R.id.navigation_item_collapse_view:
                 intent.setClass(MainActivity.this, CollpaseActivity.class);
                 startActivity(intent);
+                drawerLayout.closeDrawers();
                 break;
             case R.id.navigation_item_about_me:
-
+                intent.setClass(MainActivity.this, AboutMeActivity.class);
+                startActivity(intent);
+                drawerLayout.closeDrawers();
                 break;
             default:
                 break;
