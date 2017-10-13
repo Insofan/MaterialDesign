@@ -1,5 +1,6 @@
 package com.example.mymaterialdesign;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -15,6 +16,7 @@ import android.view.MenuItem;
 
 import android.view.View;
 import android.support.design.widget.Snackbar;
+import android.view.inputmethod.InputMethodManager;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     //init ToolBar
@@ -23,11 +25,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private ViewPagerAdapter viewPagerAdapter;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
+        //Intent
+        intent = new Intent();
 
         toolbar = (Toolbar) findViewById(R.id.app_bar_main);
         setSupportActionBar(toolbar);
@@ -41,6 +46,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         viewPagerAdapter.addFragment(new CardFragment(), "Card");
         viewPagerAdapter.addFragment(new WidgetFragment(), "Widget");
         viewPagerAdapter.addFragment(new PickerFragment(), "Picker");
+
+        //hiden soft keyboard
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageSelected(int position) {
+                final InputMethodManager imm = (InputMethodManager)getSystemService(
+                        Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(viewPager.getRootView().getWindowToken(), 0);
+            }
+
+            @Override
+            public void onPageScrolled(int position, float offset, int offsetPixels) {
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+            }
+        });
 
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
@@ -80,11 +103,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        Intent intent = new Intent();
         switch (item.getItemId()) {
-            default:
-                intent.setClass(MainActivity.this, AboutMeActivity.class);
+            case R.id.main_about_me:
+                intent.setClass(this, AboutMeActivity.class);
                 startActivity(intent);
+                break;
+            default:
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -92,14 +116,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        Intent intent = new Intent();
         switch (item.getItemId()){
             case R.id.navigation_item_bottom_tab:
                 Snackbar.make(drawerLayout,"bottom tab", Snackbar.LENGTH_SHORT).show();
                 drawerLayout.closeDrawers();
                 break;
             case R.id.navigation_item_collapse_view:
-                intent.setClass(MainActivity.this, CollpaseActivity.class);
+                intent.setClass(this, CollpaseActivity.class);
                 startActivity(intent);
                 drawerLayout.closeDrawers();
                 break;

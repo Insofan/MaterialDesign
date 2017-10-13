@@ -10,22 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"
-            android:windowSoftInputMode="adjustResize"
-            android:fitsSystemWindows="true">
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:fitsSystemWindows="true"
+            android:launchMode="singleTop"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <activity
             android:name=".CollpaseActivity"
-            android:label="Collpase Activity"></activity>
+            android:label="Collpase Activity"
+            android:parentActivityName=".MainActivity"
+            ></activity>
 
         <activity
             android:name=".AboutMeActivity"
-            android:label="About me Activity"></activity>
+            android:label="About me Activity"
+            android:parentActivityName=".MainActivity"></activity>
 
     </application>
 
