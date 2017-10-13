@@ -19,7 +19,7 @@ import android.widget.Toast;
 public class CardFragment extends Fragment implements View.OnClickListener {
     private boolean isCard2FavoriteClicked, isCard2BookmarkClicked,isCard3FavoriteClicked, isCard3BookmarkClicked;
     private Button card_1_button_1,card_1_button_2, card_2_favorite_button,card_2_bookmark_button, card_3_favorite_button,card_3_bookmark_button;
-    private CardView card_1;
+//    private CardView card_1;
     private AlphaAnimation alphaAnimationButton, alphaAnimationShowIcon;
 
 
@@ -31,7 +31,7 @@ public class CardFragment extends Fragment implements View.OnClickListener {
 
         View  cardView = inflater.inflate(R.layout.fragment_card, container, false);
         //Card
-        card_1 = (CardView) cardView.findViewById(R.id.card_1);
+//        card_1 = (CardView) cardView.findViewById(R.id.card_1);
         //Button
         card_1_button_1 = (Button) cardView.findViewById(R.id.card_button_1);
         card_1_button_2 = (Button) cardView.findViewById(R.id.card_button_2);
