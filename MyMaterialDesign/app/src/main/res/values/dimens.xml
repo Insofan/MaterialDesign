@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 	<dimen name="dimen_card_1_width">114.7dp</dimen>
 	<dimen name="dimen_card_1_height">76dp</dimen>
 	<dimen name="dimen_card_1_button_height">12dp</dimen>
@@ -37,4 +37,8 @@
 	<dimen name="dimen_widget_floating_phone_action_button_margin_bottom">58.7dp</dimen>
 	<dimen name="dimen_about_me_header_width">120dp</dimen>
 	<dimen name="dimen_about_me_header_height">49.3dp</dimen>
+
+	<!--<dimen name="design_bottom_navigation_text_size" tools:override="true">10sp</dimen>-->
+	<!--<dimen name="design_bottom_navigation_active_text_size" tools:override="true">10sp</dimen>-->
+	<dimen name="design_bottom_navigation_icon_size" tools:override="true">30dp</dimen>
 </resources>

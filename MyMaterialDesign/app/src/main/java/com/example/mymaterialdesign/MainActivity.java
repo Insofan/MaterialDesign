@@ -13,9 +13,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import android.view.View;
-import android.support.design.widget.Snackbar;
 import android.view.inputmethod.InputMethodManager;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -118,7 +116,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.navigation_item_bottom_tab:
-                Snackbar.make(drawerLayout,"bottom tab", Snackbar.LENGTH_SHORT).show();
+                intent.setClass(this, BottomNavActivity.class);
+                startActivity(intent);
                 drawerLayout.closeDrawers();
                 break;
             case R.id.navigation_item_collapse_view:

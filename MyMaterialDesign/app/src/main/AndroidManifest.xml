@@ -21,15 +21,19 @@
         </activity>
 
         <activity
+            android:name=".BottomNavActivity"
+            android:label="Bottom Activity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
             android:name=".CollpaseActivity"
             android:label="Collpase Activity"
-            android:parentActivityName=".MainActivity"
-            ></activity>
+            android:parentActivityName=".MainActivity"/>
 
         <activity
             android:name=".AboutMeActivity"
             android:label="About me Activity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity"/>
 
     </application>
 
