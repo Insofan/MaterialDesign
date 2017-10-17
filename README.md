@@ -6,7 +6,7 @@
 
 # Screen Shot
 
-[![YpJKJ.md.gif](https://s1.ax1x.com/2017/10/17/YpJKJ.md.gif)](https://imgchr.com/i/JzNQJ)
+![YpJKJ.gif](https://s1.ax1x.com/2017/10/17/YpJKJ.gif)
 
 # Sketch Preview
 
@@ -46,10 +46,10 @@
 
 # Others
 
-这是我边自学Android边写的第一个Android App,肯定有很多需要改进的地方,希望你们给我留言指出我的不足.
+这是我边自学Android边写的第一个Android App,肯定有很多需要改进的地方,希望您给我留言指出我的不足.
 
 # TODO
 
-- Review Code
+- Code Review
 - Recycler View
 - Modal Bottom Sheets
